@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm trung bình</title>
+</head>
+<body>
+
+<h1>Nhập điểm các môn và tính điểm trung bình</h1>
+
+<script>
+    // Nhập điểm từ người dùng
+    let diemVatLy = parseFloat(prompt("Nhập điểm môn Vật lý:"));
+    let diemHoaHoc = parseFloat(prompt("Nhập điểm môn Hóa học:"));
+    let diemSinhHoc = parseFloat(prompt("Nhập điểm môn Sinh học:"));
+
+    // Kiểm tra điều kiện điểm nhập vào
+    if (diemVatLy >= 0 && diemVatLy <= 10 &&
+        diemHoaHoc >= 0 && diemHoaHoc <= 10 &&
+        diemSinhHoc >= 0 && diemSinhHoc <= 10) {
+
+        // Tính điểm trung bình
+        let diemTrungBinh = (diemVatLy + diemHoaHoc + diemSinhHoc) / 3;
+
+        // Hiển thị kết quả bằng alert
+        alert(`Điểm trung bình của ba môn là: ${diemTrungBinh.toFixed(2)}`);
+    } else {
+        alert("Điểm nhập vào phải nằm trong khoảng từ 0 đến 10. Vui lòng nhập lại.");
+    }
+</script>
+
+</body>
+</html>

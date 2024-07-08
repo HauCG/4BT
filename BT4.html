@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEM EXCHANGE</title>
+</head>
+<body>
+<h1>Tính Chu Vi Hình Tròn</h1>
+<script>
+    let banKinh = parseFloat(prompt("Nhập Bán Kính (cm):"));
+    if (!isNaN(banKinh) && banKinh > 0) {
+        let chuVi = 3.14159265359 * (2 * banKinh);
+        alert("Chu Vi hình tròn là: " + chuVi.toFixed(2) + " cm²");
+    } else {
+        alert("Vui lòng nhập một giá trị bán kính hợp lệ (cm).");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEM EXCHANGE</title>
+</head>
+<body>
+<hi>TEM EXCHANGE</hi>
+<script>
+    let doC = parseFloat(prompt("Nhập nhiệt độ (°C):"));
+    if (!isNaN(doC)) {
+        // Công thức chuyển đổi từ Celsius sang Fahrenheit
+        let doF = (doC * 9/5) + 32;
+        alert(`${doC}°C tương đương với ${doF.toFixed(2)}°F`);
+    } else {
+        alert("Vui lòng nhập một giá trị hợp lệ cho nhiệt độ (°C).");
+    }
+</script>
+</body>
+</html>
